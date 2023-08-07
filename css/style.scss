@@ -1,5 +1,4 @@
-@import url(./font.css);
-@import url(./conts.css);
+
 
 nav {
   .navbar__wrapper {
@@ -282,6 +281,11 @@ nav {
   }
 
   nav {
+
+    .burger label {
+      display: block;
+    }
+
     .navbar__wrapper {
       .burger {
         display: block;

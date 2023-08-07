@@ -1,5 +1,3 @@
-@import url(./font.css);
-@import url(./conts.css);
 nav .navbar__wrapper {
   display: flex;
   align-items: center;
@@ -224,6 +222,9 @@ nav .navbar__menu li a {
 @media only screen and (max-width: 1024px) {
   .container {
     max-width: 768px;
+  }
+  nav .burger label {
+    display: block;
   }
   nav .navbar__wrapper .burger {
     display: block;
