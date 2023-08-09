@@ -360,7 +360,31 @@ nav .navbar__menu li a {
 }
 
 .recommendation {
-  background: url(/img/Image.jpg) center center/cover no-repeat;
+  position: relative;
+}
+.recommendation .recommend__img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.recommendation .recommend__img1 img {
+  width: 100%;
+  height: 1215px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.recommendation .recommend__img2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.recommendation .recommend__img2 img {
+  width: 100%;
+  height: 1215px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .recommendation .recommendation__wrapper {
   display: flex;
@@ -368,6 +392,7 @@ nav .navbar__menu li a {
   align-items: center;
   justify-content: center;
   padding: 164px 0;
+  z-index: 3;
 }
 .recommendation .recommendation__wrapper h2 {
   color: #7EB693;
@@ -410,7 +435,7 @@ nav .navbar__menu li a {
   font-style: normal;
   font-weight: 400;
   line-height: 165.4%;
-  width: 760px;
+  width: 680px;
   margin-bottom: 25px;
 }
 .recommendation .recommendation__wrapper h3 {
@@ -438,24 +463,24 @@ nav .navbar__menu li a {
   margin-bottom: 102px;
 }
 .recommendation .recommendation__wrapper hr {
+  border: 1px solid #E0E0E0;
   margin-bottom: 102px;
 }
 .recommendation .recommendation__circle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 60px;
 }
 .recommendation .recommendation__circle .recommendation__box {
   background: #F1F1F1;
   border: 4px solid #7EB693;
   border-radius: 100%;
-  width: 211px;
-  height: 211px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  aspect-ratio: 1/1;
+  padding: 20px;
 }
 .recommendation .recommendation__circle .recommendation__box h4 {
   color: #274C5B;
@@ -638,6 +663,18 @@ nav .navbar__menu li a {
   .products .products__items {
     grid-template-columns: repeat(3, 1fr);
   }
+  .recommendation .recommendation__circle {
+    gap: 40px;
+  }
+  .recommendation .recommendation__circle .recommendation__box {
+    padding: 20px;
+  }
+  .recommendation .recommendation__circle .recommendation__box h4 {
+    font-size: 40px;
+  }
+  .recommendation .recommendation__circle .recommendation__box p {
+    font-size: 17px;
+  }
 }
 /* ==============768=================== */
 @media only screen and (max-width: 768px) {
@@ -671,6 +708,47 @@ nav .navbar__menu li a {
   }
   .products .products__items .products__box img {
     height: 280px;
+  }
+  .recommendation {
+    background: #F1F1F1;
+  }
+  .recommendation .recommend__img1 {
+    display: none;
+  }
+  .recommendation .recommend__img2 {
+    display: none;
+  }
+  .recommendation .recommendation__wrapper {
+    padding: 80px 0;
+  }
+  .recommendation .recommendation__wrapper h1 {
+    font-size: 40px;
+  }
+  .recommendation .recommendation__wrapper h2 {
+    font-size: 30px;
+  }
+  .recommendation .recommendation__wrapper hr {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .recommendation .recommendation__wrapper .recommend__svg {
+    margin-bottom: 50px;
+  }
+  .recommendation .recommendation__wrapper .recommendation__text {
+    width: 100%;
+  }
+  .recommendation .recommendation__circle {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .recommendation .recommendation__circle .recommendation__box {
+    padding: 20px;
+  }
+  .recommendation .recommendation__circle .recommendation__box h4 {
+    font-size: 30px;
+  }
+  .recommendation .recommendation__circle .recommendation__box p {
+    font-size: 15px;
   }
 }
 /* ==============640=================== */
@@ -906,5 +984,30 @@ nav .navbar__menu li a {
   }
   .products .products__items .products__box img {
     height: 280px;
+  }
+  .recommendation .recommendation__wrapper h1 {
+    font-size: 30px;
+  }
+  .recommendation .recommendation__wrapper h2 {
+    font-size: 20px;
+  }
+  .recommendation .recommendation__wrapper h3 {
+    font-size: 20px;
+  }
+  .recommendation .recommendation__wrapper .recommendation__text {
+    font-size: 12px;
+  }
+  .recommendation .recommendation__circle {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .recommendation .recommendation__circle .recommendation__box {
+    padding: 20px;
+  }
+  .recommendation .recommendation__circle .recommendation__box h4 {
+    font-size: 25px;
+  }
+  .recommendation .recommendation__circle .recommendation__box p {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */
