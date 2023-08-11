@@ -126,14 +126,13 @@ nav {
 
 .about {
   width: 100%;
-  display: flex;
-  justify-content: center;
   margin-top: 113px;
   margin-bottom: 143px;
   .about__wrapper {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 30px;
   }
 
   .about__text {
@@ -229,6 +228,127 @@ nav {
     }
   }
 }
+//about-product
+
+.about-product{
+  width: 100%;
+  padding: 103px 0px 130px 0px;
+  background-color: #F9F8F8;
+  .about-product__content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    .about-product__card-line{
+      width: 100%;
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      overflow-x: auto;
+      .about-product__card{
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        background-color: #FFF;
+        border-radius: 15px;
+        width: 200px;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
+        h2{
+          color: #274C5B;
+          font-family: Roboto;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+        p{
+          color: #525C60;
+          text-align: center;
+          font-family: 'Open Sans';
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 165.4%;
+        }
+        div{
+          border-radius: 18px;
+          background: #F9F8F8;
+          padding: 20px;
+        }
+      }
+    }
+    .about-product__info-line{
+      display: flex;
+      gap: 25px;
+      .about-product__text{
+        display: flex;
+        flex-direction: column;
+        span{
+          color: #525C60;
+          font-family: 'Open Sans';
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 165.4%;
+          margin-left: 60px;
+        }
+        div{
+          width: 339px;
+          padding: 29px 0;
+          display: flex;
+          align-items: center;
+          gap: 7px;
+          border-radius: 49px;
+          background: #ECECEC;
+          cursor: pointer;
+          h5{
+            color: #274C5B;
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+          i{
+            margin-left: 27px ;
+            color: #7EB693;
+          }
+        }
+        h1{
+          color: #274C5B;
+          font-family: Roboto;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+          width: 424px;
+        }
+        h2{
+          color: #7EB693;
+          font-family: Yellowtail;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        p{
+          margin-top: 25px;
+          color: #525C60;
+          font-family: 'Open Sans';
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 165.4%;
+        }
+      }
+      img{
+        border-radius: 20px;
+      }
+    }
+  }
+}
   
   // media
 
@@ -281,17 +401,33 @@ nav {
     }
   
     //about
-    .about__wrapper{
-      grid-template-columns: repeat(1,1fr);
-      justify-content: center;
-      gap: 0;
-    }
-    .about__card{
-      display: none !important;
-
-      img {
-        display: none;
+    .about{
+      .about__wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        gap: 0;
       }
+      .about__card{
+        display: none !important;
+  
+        img {
+          display: none;
+        }
+      }
+    }
+    //about-product
+    .about-product__info-line{
+      flex-direction: column-reverse;
+      align-items: center;
+      .about-product__text{
+        align-items: center;
+        div{
+          margin-top: 20px;
+        }
+        span{
+          margin-top: 20px;
+        }
+      }      
     }
   }
   /* ==============1024=================== */
@@ -347,7 +483,19 @@ nav {
       font-size: 50px;
     }
   }
-    
+    .about{
+      .about__wrapper{
+        justify-content: center;
+      }
+      h1{
+        text-align: center;
+      }
+    }
+    .about-product__text{
+      p{
+        text-align: center;
+      }
+    }
   }
   
   /* ==============768=================== */
@@ -367,9 +515,45 @@ nav {
         }
       }
     }
+  //about
   
-  
-  
+  .about{
+    .about__wrapper{
+      justify-content: center;
+    }
+    h1{
+      text-align: center;
+      font-size: 30px !important;
+    }
+    .about__items{
+      flex-direction:column ;
+    }
+    p{
+      text-align: center;
+      font-size: 16px !important;
+    }
+  }
+  //about-product
+  .about-product__info-line{
+    flex-direction: column-reverse;
+    align-items: center;
+    img{
+      display: none;
+    }
+    .about-product__text{
+      align-items: center;
+      h1{
+        font-size: 30px !important;
+        text-align: center;
+      }
+      p{
+        text-align: center;
+      }
+      span{
+        margin: 20px 0 0 0 !important;
+      }
+    }
+  }
   }
   
   /* ==============640=================== */
@@ -427,8 +611,26 @@ nav {
         font-size: 40px;
       }
     }
-  
-  
+  //about
+  .about{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .about__items{
+      margin-top: 20px !important;
+    }
+    p{
+      margin-bottom: 20px !important;
+    }
+  }
+  .about-product{
+    padding: 50px 0px 60px 0px;
+    .about-product__text{
+      span{
+        text-align: center;
+      }
+    }
+  }
   }
   
   /* ==============450=================== */
@@ -455,6 +657,22 @@ nav {
     .banner{
       h1{
         font-size: 30px;
+      }
+    }
+    .about-product{
+      padding: 50px 0px 60px 0px;
+      .about-product__text{
+        h1{
+          width: 350px !important;
+        }
+        p{
+          font-size: 14px;width: 350px;
+        }
+        span{
+          width: 350px;
+          text-align: center;
+          font-size: 14px;
+        }
       }
     }
     }
