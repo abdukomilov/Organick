@@ -125,7 +125,7 @@ nav .navbar__menu li a {
 }
 .about .about__card img {
   width: 100%;
-  height: 100%;
+  height: 77%;
   flex-shrink: 0;
   -o-object-fit: cover;
      object-fit: cover;
