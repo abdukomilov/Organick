@@ -857,6 +857,7 @@ nav .navbar__menu li a {
   align-items: center;
 }
 .subscribe .subscribe__content .subscribe__wrapper h1 {
+  text-align: center;
   color: #FFF;
   font-family: Roboto;
   font-size: 50px;
