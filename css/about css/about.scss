@@ -496,7 +496,65 @@ nav {
     }
   }
 }
-  
+  //subscibe
+
+
+  .subscribe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+
+    .subscribe__content{
+      padding: 57px 51px;
+      border-radius: 10px;
+      background-image: url(/img/about_img/Photo\ \(15\).png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      .subscribe__wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+          color: #FFF;
+          font-family: Roboto;
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+        div{
+          display: flex;
+          gap: 6px;
+
+          input[type="email"]{
+            height: 60px;
+            padding:20px;
+            border-radius: 10px;
+            border: 0;
+            outline: 0;
+          }
+          input[type="submit"]{
+            color: #FFF;
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            height: 60px;
+            padding: 20px;
+            background-color: #274C5B;
+            border: 0;
+            outline: 0;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+
+
   // media
 
 @media only  screen and (max-width: 1536px){
@@ -643,6 +701,27 @@ nav {
         text-align: center;
       }
     }
+    //subscibe
+
+    .subscribe__content{
+      padding: 52px 51px !important;
+      .subscribe__wrapper{
+        width: 100%;
+        h1{
+          font-size: 30px !important;
+        }
+        div{
+          display: flex;
+          gap: 6px;
+
+          input[type="email"]{
+            
+          }
+          input[type="submit"]{
+          }
+        }
+      }
+    }
   }
   
   /* ==============768=================== */
@@ -706,6 +785,31 @@ nav {
   .offer{
     padding: 80px 0;
   }
+      //subscibe
+
+      .subscribe__content{
+        padding: 50px 51px !important;
+        .subscribe__wrapper{
+          width: 100%;
+          h1{
+            font-size: 20px !important;
+          }
+          div{
+            display: flex;
+            gap: 6px;
+  
+            input[type="email"]{
+              height: 45px !important;
+              padding: 10px !important;
+            }
+            input[type="submit"]{
+              font-size: 18px !important;
+              height: 45px !important;
+              padding: 10px !important;
+            }
+          }
+        }
+      }
   }
   
   /* ==============640=================== */
@@ -794,6 +898,35 @@ nav {
   .offer{
     h1{
       font-size: 35px;
+    }
+  }
+  .subscribe__content{
+    padding: 50px 51px !important;
+    background-size: 100% 100% !important;
+    background-size: cover !important;
+    background-position: center;
+    .subscribe__wrapper{
+      width: 100%;
+      flex-direction: column;
+      gap: 20px;
+      h1{
+        font-size: 20px !important;
+      }
+      div{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        input[type="email"]{
+          height: 45px !important;
+          padding: 10px !important;
+        }
+        input[type="submit"]{
+          font-size: 18px !important;
+          height: 45px !important;
+          padding: 10px !important;
+        }
+      }
     }
   }
   }

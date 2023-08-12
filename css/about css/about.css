@@ -465,6 +465,59 @@ nav .navbar__menu li a {
   height: 300px;
 }
 
+.subscribe {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+}
+.subscribe .subscribe__content {
+  padding: 57px 51px;
+  border-radius: 10px;
+  background-image: url(/img/about_img/Photo\ \(15\).png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.subscribe .subscribe__content .subscribe__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subscribe .subscribe__content .subscribe__wrapper h1 {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.subscribe .subscribe__content .subscribe__wrapper div {
+  display: flex;
+  gap: 6px;
+}
+.subscribe .subscribe__content .subscribe__wrapper div input[type=email] {
+  height: 60px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+}
+.subscribe .subscribe__content .subscribe__wrapper div input[type=submit] {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  height: 60px;
+  padding: 20px;
+  background-color: #274C5B;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 1536px) {
   .container {
     max-width: 1280px;
@@ -574,6 +627,19 @@ nav .navbar__menu li a {
   .about-product__text p {
     text-align: center;
   }
+  .subscribe__content {
+    padding: 52px 51px !important;
+  }
+  .subscribe__content .subscribe__wrapper {
+    width: 100%;
+  }
+  .subscribe__content .subscribe__wrapper h1 {
+    font-size: 30px !important;
+  }
+  .subscribe__content .subscribe__wrapper div {
+    display: flex;
+    gap: 6px;
+  }
 }
 /* ==============768=================== */
 @media only screen and (max-width: 768px) {
@@ -620,6 +686,28 @@ nav .navbar__menu li a {
   }
   .offer {
     padding: 80px 0;
+  }
+  .subscribe__content {
+    padding: 50px 51px !important;
+  }
+  .subscribe__content .subscribe__wrapper {
+    width: 100%;
+  }
+  .subscribe__content .subscribe__wrapper h1 {
+    font-size: 20px !important;
+  }
+  .subscribe__content .subscribe__wrapper div {
+    display: flex;
+    gap: 6px;
+  }
+  .subscribe__content .subscribe__wrapper div input[type=email] {
+    height: 45px !important;
+    padding: 10px !important;
+  }
+  .subscribe__content .subscribe__wrapper div input[type=submit] {
+    font-size: 18px !important;
+    height: 45px !important;
+    padding: 10px !important;
   }
 }
 /* ==============640=================== */
@@ -689,6 +777,34 @@ nav .navbar__menu li a {
   }
   .offer h1 {
     font-size: 35px;
+  }
+  .subscribe__content {
+    padding: 50px 51px !important;
+    background-size: 100% 100% !important;
+    background-size: cover !important;
+    background-position: center;
+  }
+  .subscribe__content .subscribe__wrapper {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .subscribe__content .subscribe__wrapper h1 {
+    font-size: 20px !important;
+  }
+  .subscribe__content .subscribe__wrapper div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .subscribe__content .subscribe__wrapper div input[type=email] {
+    height: 45px !important;
+    padding: 10px !important;
+  }
+  .subscribe__content .subscribe__wrapper div input[type=submit] {
+    font-size: 18px !important;
+    height: 45px !important;
+    padding: 10px !important;
   }
 }
 /* ==============450=================== */
