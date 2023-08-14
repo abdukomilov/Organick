@@ -154,10 +154,11 @@ nav .navbar__menu li a {
   transition: transform 0.5s;
 }
 .product .product__card .product__img .product__hover i {
-  font-size: 20px;
+  font-size: 30px;
   background: #7EB693;
-  padding: 20px;
+  padding: 30px;
   border-radius: 100%;
+  color: #FFF;
 }
 
 .subscribe {
